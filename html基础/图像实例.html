@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body background="picture/3.jpg"; style="text-align:right;background-repeat:no-repeat;background-position:center">
+    <p>
+        
+        <img src="picture/2.jpg"  width="120" height="120" alt="图片无法读取"/>设定图像的高宽
+    </p>
+    <div>  
+        style 里面的vertical-align属性可以控制图像的上下位置<br/>
+        <img src="picture/2.jpg"alt="图片无法读取" width="100" height="100"style="vertical-align:bottom" />
+        缩小，可以有图像的width，height的属性进行控制
+        <img src="picture/2.jpg"alt="图片无法读取" width="60" height="60" style="vertical-align:text-top"/>
+    </div>
+
+
+    <div> 
+    <marquee direction="left" loop="-1" width="300" height="300"  >
+<img src="picture/4.jpg" alt="图片无法读取"/><img src="picture/3.jpg" alt="图片无法读取" /><img src="picture/2.jpg" /><img src="picture/1.jpg" /><img src="picture/5.jpg" />
+    </marquee>
+<!--属性说明：
+direction为滚动方向
+loop -1代表循环滚动
+width 宽
+height 高
+bgcolor背景颜色
+behavior行为（滚动方式）
+值有scroll（连续不断的滚动）slide（滚动一次并停止）alternate（交替式滚动）
+scrollamount单位时间内移动多少像素 scrolldelay延迟的时间 停顿 loop循环次数
+onmouseover="this.stop()" onmouseout="this.start()"
+鼠标经过的时候停止，离开的时候继续滚动-->
+    动态图片marquee scrollAmount是速度，behavior是运动形式
+    <marquee scrollamount="20" behavior="alternate">
+        <a href="表单与输入实例.html" target="_blank">
+            <img src="picture/3.jpg" border="0" alt="图片无法读取"/></a>
+    </marquee>
+    </div> 
+
+
+
+    <!--<script>
+    
+    var speed=10; //数字越大速度越慢
+    var tab=document.getElementById("demo");
+    var tab1=document.getElementById("demo1");
+    var tab2=document.getElementById("demo2");
+    tab2.innerHTML=tab1.innerHTML;
+    function Marquee(){
+        if(tab2.offsetWidth-tab.scrollLeft<=0)
+            tab.scrollLeft-=tab1.offsetWidth
+        else{
+            tab.scrollLeft++;
+        }
+    }
+    var MyMar=setInterval(Marquee,speed);
+    tab.onmouseover=function() {clearInterval(MyMar)};
+    tab.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+        
+</script>-->
+
+    <p>请点击小孩子的眼睛。</p>
+
+<img
+src="picture/1.jpg"
+border="0" usemap="#planetmap"
+alt="Planets" />
+
+<map name="planetmap" id="planetmap">
+
+    shape表示的是选取的图形，coords表示的是圆的坐标和半径
+<area
+shape="circle"
+coords="100,100,100"
+href="picture/2.jpg"
+target ="_blank"
+alt="Venus" />
+
+</map>
+
+<p><b>注释：</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），
+    所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
+
+    <a href="picture/3.jpg">
+<img src="picture/4.jpg" />
+</a>
+
+    <!--<img>	定义图像。
+<map>	定义图像地图。
+<area>	定义图像地图中的可点击区域。-->
+
+</body>
+</html>

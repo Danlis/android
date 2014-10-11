@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form action="/" method="post">
+        <b>last name</b>
+        <input type="text" name="lastname" value=" " />
+        <br />
+        <b>first name</b>
+        <input type="text" name="firstname" value=" " />
+        <br />
+        <b>secret</b>
+        <input type="password" name="password" value="" />
+        <br />
+        <b>复选框checkbox</b>
+        <input type="checkbox" name="checkbox" value="" />
+        <input type="checkbox" name="name" value=" " />
+        <br />
+        
+    </form>
+    <br />
+
+    <form>
+        男性：
+        <input type="radio" checked="checked" name="Sex" value="male" />
+        <br />
+        女性：
+        <input type="radio" name="Sex" value="female" />
+    </form>
+    <hr />
+    <form>
+        <b>单选按钮</b>
+        不知道为什么这个单选没有效果，都可以选上，试了一下，单独放一个form里面也不行，
+        干脆就复制了代码看看，网上的是可以的，所以只能比较了，肯定是哪里少了.
+        原来是name属性需要一致才可以。并且复选框放一块都不影响
+        <br />
+        form不能嵌套在form里面
+        <hr />
+        man
+        <input type="radio" checked="checked" name="man" value="male" />
+        <br />
+        woman
+        <input type="radio" name="man" value="female " />
+        <br />
+        people
+        <input type="checkbox" name="man" value=" people" />
+        <br />
+        person
+        <input type="checkbox" name="man" value="person " />
+        </form>
+
+
+<hr />
+
+    下拉框select
+    value一致好像没有影响
+    <form>
+        <select>
+            <option value="value">value</option>
+            <option value="value">valu</option>
+            <option value="value">val</option>
+        </select>
+    </form>
+    <hr />
+    加了下拉选框 的名字以及选定项
+    <form>
+        <select name="value">
+            <option value="value">value</option>
+            <option value="value">valu</option>
+            <option value="value" selected="selected">val</option>
+        </select>
+    </form>
+    <hr/>
+    文本域
+    <textarea rows="5" cols="30">
+        content
+        
+            for()
+            i=0;
+            i++;
+        come 
+        here dlfjkd
+
+    </textarea>
+    <p>
+        &nbsp;</p>
+            
+    <form>
+        <input type="button" name="name" value="hello world " />
+    </form>
+
+    <hr/>
+
+    <form action="基础标签实例.htm" method="get">
+        <fieldset style="caption-side:bottom;padding:10px 10px 5px 5px;border:1px yellow solid">
+            <legend style="padding:1px ;">
+                标题
+            </legend>
+            <p>里面的内容输入框input：<input type="text" name="name" value=" " /></p>
+            <p>content:<input type="text" name="name" value=" " /></p>
+            <input type="submit" name="name" value="submit " />
+            <br />
+        </fieldset>
+    </form>
+    <br />
+
+    <form action="MAILTO:someone@w3school.com.cn" method="post" enctype="text/plain">
+
+    <h3>这个表单会把电子邮件发送到 W3School。</h3>
+    姓名：<br />
+    <input type="text" name="name" value="yourname" size="20"/>
+    <br />
+    电邮：<br />
+    <input type="text" name="mail" value="yourmail" size="20"/>
+    <br />
+    内容：<br />
+    <input type="text" name="comment" value="yourcomment" size="40"/>
+    <br /><br />
+    <input type="submit" value="发送"/>
+    <input type="reset" value="重置"/>
+    </form>
+</body>
+</html>
